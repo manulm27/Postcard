@@ -1,10 +1,13 @@
+*{
+	font-family: 'Indie Flower', cursive;
+}
 body {
 	background: black;
 }
 
 .postcard {
 	width: 400px;
-	height: 300px;
+	height: auto;
 	margin: auto;
 	background: white;
 }
@@ -15,15 +18,18 @@ body {
 	height: 25%;
 }
 
-.postcard-header h1 {
-	width: 330px;
-	margin: 5px 0px 0px 5px;
+.postcard .postcard-header > .title{
+	width: 80%;
 }
 
-.postcard-header img {
+.title > h2{
+	margin: 20px;
+}
+
+.img > img{
 	width: 50px;
 	height: 50px;
-	margin: 5px 5px 5px 0px;
+	margin: 10px;
 }
 
 .postcard-body {
@@ -40,11 +46,11 @@ body {
 }
 
 .body-left > p {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
 	font-size: 16px;
 	text-align: justify;
-	padding: 0px 5px 0px 5px;
-	margin: 0px 5px 5px 5px;
+	padding: 5px 10px 5px 20px;
+	margin: 0px;
 }
 
 .body-right {
@@ -53,6 +59,7 @@ body {
 }
 
 .body-right input {
+	width: 95%;
 	margin-top: 10px;
 	border: 0px;
 	border-bottom: 1px solid grey;
@@ -60,13 +67,16 @@ body {
 
 .postcard-footer {
 	width: 100%;
+	padding: 10px;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 button {
-	color: white;
-	padding: 10px;
-	background: rgba(113, 172, 248, 0.74);
+	margin: 0px 10px 10px 10px;
+	color: rgb(0, 0, 0);
+	padding: 5px;
+	background: rgba(148, 148, 148, 0.74);
 	border: 0px;
 	border-bottom: 1px solid gray;
 	border-right: 1px solid gray;
@@ -80,7 +90,5 @@ button:hover {
 
 button:active {
 	transition: 0ms;
-	background: rgba(113, 172, 248, 0.74);
-	box-shadow: inset 1px 1px 0px 0px rgb(94, 94, 94);
-	border: 0px;
+	background: rgba(148, 148, 148, 0.74);
 }

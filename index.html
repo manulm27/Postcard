@@ -3,33 +3,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type=text/css href="./styles.css" />
 		<title>Postcard</title>
 	</head>
 	<body>
 		<div class="postcard">
 			<div class="postcard-header">
-				<h1>My Postcard</h1>
-				<img
+				<div class="title">
+					<h2>My Postcard</h2>
+				</div>
+				<div class="img">
+					<img
 					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
 				/>
+				</div>
+
 			</div>
 			<div class="postcard-body">
 				<div class="body-left">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					<p>Lorem Ipsum has been the industry's standard dummy It was in the 1960s with desktop</p>
+					<p>Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum has been the industry's standard dummy It was in the 1960s.</p>
+
 				</div>
 				<div class="body-right">
-					<form>
-						<input type="text" placeholder="Some Name" />
-						<input type="text" placeholder="Some email" />
-						<input type="text" placeholder="some comment" />
+					<form id="form">
+						<label for="name" id="name"></label>
+						<input type="text" name="name" placeholder="Some Name" />
+						<label for="name" id="name"></label>
+						<input type="text" name="name" placeholder="Some email" />
+						<label for="name" id="name"></label>
+						<input type="text" name="name" placeholder="some comment" />
 					</form>
-
 				</div>
 			</div>
 			<div class="postcard-footer">
-				<button>Send My Postcard</button>
+				<button><strong>Send my Postcard</strong></button>
 			</div>
 		</div>
 	</body>
